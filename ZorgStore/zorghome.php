@@ -12,7 +12,7 @@
 	  background-color: #3F47CC;
 	  padding: 100px;
       margin-bottom: 0;
-	  h1{color: pink;}
+	  border-radius: 0;
     }
 	
 	.jumbotron h1{
@@ -28,7 +28,6 @@
       border-radius: 0;
     }
 	
-    /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #fEF200;
 	  position: fixed;
@@ -36,8 +35,6 @@
 	  width: 100%;
 	  padding: 5px;
     }
-	
-	
 	
   </style>
 </head>
