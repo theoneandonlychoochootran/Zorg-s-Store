@@ -1,0 +1,35 @@
+	.jumbotron {
+	  background-color: #3F47CC;
+	  padding: 1%;
+      margin-bottom: 0;
+	  border-radius: 0;
+    }
+	
+	.jumbotron h1{
+	 font-family: "Cooper Black";
+	 color: pink;
+	}
+	
+	.container h1{
+		text-align: center;
+		padding-bottom: 2%;
+		
+	}
+   .navbar {
+	  background-color: #3F47CC;
+	  margin-bottom: 5%;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  padding-right: 20px;
+      border-radius: 0;
+    }
+	.btn-link {
+		font-family: "Cooper Black";
+		color: #99C55E;
+	}
+    footer {
+      background-color: #fEF200;
+	  position: fixed;
+	  bottom: 0;
+	  width: 100%;
+    }	
