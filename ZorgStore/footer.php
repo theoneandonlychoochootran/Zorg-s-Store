@@ -1,3 +1,3 @@
-<footer class="container-fluid text-center">
+<footer>
   <p>Zorg Books Copyright 2018</p>  
 </footer>

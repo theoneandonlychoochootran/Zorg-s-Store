@@ -10,7 +10,7 @@
 </head>
 <div class="jumbotron">
   <div class="container text-center">
-	<h1>Zorg Books!</h1>      
+	<h1><a href="index.php">Zorg Books!</a></h1>      
   </div>
 </div>
 

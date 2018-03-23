@@ -1,3 +1,12 @@
+	a{	
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
 	.jumbotron {
 	  background-color: #3F47CC;
 	  padding: 1%;
@@ -5,7 +14,7 @@
 	  border-radius: 0;
     }
 	
-	.jumbotron h1{
+	.jumbotron a{
 	 font-family: "Cooper Black";
 	 color: pink;
 	}
@@ -15,6 +24,7 @@
 		padding-bottom: 2%;
 		
 	}
+	
    .navbar {
 	  background-color: #3F47CC;
 	  margin-bottom: 5%;
@@ -27,9 +37,67 @@
 		font-family: "Cooper Black";
 		color: #99C55E;
 	}
+	
+	.container-jb {
+		width: 1000px;
+		min-height:500px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	
+	.row-jb {
+		width: 100%;
+		min-height:500px;
+		
+	}
+	
+	.genre-container {
+		padding-left: 13px;
+		margin-top: 50px;
+	}
+	.genre-item {
+		float: left;
+		width: 222px;
+		height: 40px;
+		text-align: center;
+		
+	}
+	
+	.genre-text{
+		font-family: "Cooper Black";
+		color: black;
+		font-size: 25px;
+	}
+
+	.left-main {
+		float: left;
+		text-align: right;
+		min-height: 500px;
+		width: 450px;
+		margin-bottom: 100px;
+	}
+	
+	.right-main{
+		float: right;
+		min-height: 500px;
+		width: 450px;
+		padding: 25px;
+		margin-bottom: 100px;
+	}
+	
+	.jbbutton{
+		background-color: #3F47CC;
+		color: #fEF200;
+	}
+
+	
     footer {
       background-color: #fEF200;
-	  position: fixed;
 	  bottom: 0;
+	  margin-top: 50px;
+	  text-align:center;
+	  position:fixed;
 	  width: 100%;
     }	
+	
+	
