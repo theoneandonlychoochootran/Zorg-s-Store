@@ -18,12 +18,11 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
-		<button type="button" class="btn btn-link">Shopping Cart</button>
+		<a href="#" class="btn btn-link">Shopping Cart</a>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
 		<form class="form-inline">
-		<input type="email" class="form-control" size="30" placeholder="Search">
-		<button type="button" class="btn btn-basic"> Search </button>
+		<a href="#" class="btn btn-link">Log In</a>
 	  </ul>
   </form>
     </div>
