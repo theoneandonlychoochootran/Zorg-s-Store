@@ -24,6 +24,7 @@
 	  <ul class="nav navbar-nav navbar-right">
 		<form class="form-inline">
 		<a href="#" class="btn btn-link">Log In</a>
+		<a href="#" class="btn btn-link">Sign Up</a>
 	  </ul>
   </form>
     </div>

@@ -16,7 +16,7 @@
 	 <div class ="right-main">
 		<h2><?php echo $row["title"]?></h2>
 		<p><?php echo $row["short_description"]?></p>
-		<p><?php echo $row["price"]?></p>
+		<p><?php echo "$" . $row["price"]?></p>
 		<a href="#" class = "btn btn-basic jbbutton">Add to cart </a>
 	 </div>
    </div>
