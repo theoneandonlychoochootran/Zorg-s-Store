@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include('dbconnect.php'); ?>
 <head>
   <title>Zorg Books</title>
   <meta charset="utf-8">

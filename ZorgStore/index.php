@@ -10,13 +10,13 @@
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-      <a href="product.php?id=123" title =""><img src="productsample.jpg" class="img-responsive" style="width:50%" alt="Image"></a>
+      <a href="product.php?id=1" title =""><img src="productsample.jpg" class="img-responsive" style="width:50%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-      <a href="product.php?id=456" title =""><img src="productsample.jpg" class="img-responsive" style="width:50%" alt="Image"></a>
+      <a href="product.php?id=2" title =""><img src="productsample.jpg" class="img-responsive" style="width:50%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-      <a href="product.php?id=789" title =""><img src="productsample.jpg" class="img-responsive" style="width:50%" alt="Image"></a>
+      <a href="product.php?id=3" title =""><img src="productsample.jpg" class="img-responsive" style="width:50%" alt="Image"></a>
     </div>
   </div>
 
