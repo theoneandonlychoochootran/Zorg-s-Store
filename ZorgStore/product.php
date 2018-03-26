@@ -1,6 +1,6 @@
 <?php include 'navigation.php';?>
 <?php $id = $_GET['id'];
-	  $sql = "SELECT title,price, short_description FROM books WHERE book_id='$id'";
+	  $sql = "SELECT title,price, short_description, book_pic FROM books WHERE book_id='$id'";
 	  $result = $conn->query($sql);
 	  $row = $result->fetch_assoc();
 ?>
@@ -11,7 +11,7 @@
 <div class="container-jb">    
   <div class="row-jb">
      <div class ="left-main">
-		<img src="productsample.jpg" width="260" height="390">
+		<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $row["book_pic"]).'" width="260" height="390"/>';?>
 	 </div>
 	 <div class ="right-main">
 		<h2><?php echo $row["title"]?></h2>
