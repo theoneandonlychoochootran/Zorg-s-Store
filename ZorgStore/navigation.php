@@ -28,10 +28,11 @@ include('dbconnect.php');
 		<form class="form-inline">
 		<?php if (!isset($_SESSION['user_id'])){?>
 		<a href="login.php" class="btn btn-link">Log In</a>
+		<a href="signup.php" class="btn btn-link">Sign Up</a>
 		<?php }else {?>
 		<a href="logout.php" class="btn btn-link">Log Out</a>
 		<?php }?>
-		<a href="signup.php" class="btn btn-link">Sign Up</a>
+		
 	  </ul>
   </form>
     </div>
