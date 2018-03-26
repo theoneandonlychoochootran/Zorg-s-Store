@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('dbconnect.php'); ?>
+<?php
+session_start(); 
+include('dbconnect.php'); 
+?>
 <head>
   <title>Zorg Books</title>
   <meta charset="utf-8">
@@ -23,7 +26,11 @@
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
 		<form class="form-inline">
+		<?php if (!isset($_SESSION['user_id'])){?>
 		<a href="login.php" class="btn btn-link">Log In</a>
+		<?php }else {?>
+		<a href="logout.php" class="btn btn-link">Log Out</a>
+		<?php }?>
 		<a href="signup.php" class="btn btn-link">Sign Up</a>
 	  </ul>
   </form>
