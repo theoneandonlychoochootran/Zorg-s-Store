@@ -36,6 +36,11 @@ if (isset($_POST['login']))
 			if ($pwHash == $row['password'])
 			{
 				header("Location: ../login.php?login=yes");
+					$_SESSION['user_id'] = $row['user_id'];
+					$_SESSION['email'] = $row['email'];
+					$_SESSION['city'] = $row['city'];
+					$_SESSION['state'] = $row['state'];
+					$_SESSION['zip'] = $row['zip_code'];
 				exit();
 			}
 			else

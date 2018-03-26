@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'navigation.php';
 include 'footer.php';
 ?>
