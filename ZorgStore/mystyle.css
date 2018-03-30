@@ -2,13 +2,13 @@
 		color: black;
 		text-decoration: none;
 	}
-	
+
 	a:hover {
 		text-decoration: none;
 	}
 	
 	.jumbotron {
-	  background-color: #3F47CC;
+	  background-color: #3F47CD;
 	  padding: 1%;
       margin-bottom: 0;
 	  border-radius: 0;
@@ -33,6 +33,10 @@
 	  padding-right: 20px;
       border-radius: 0;
     }
+	.navbar a:hover{
+		color: #99C55E;
+		text-decoration: none;
+	}
 	.btn-link {
 		font-family: "Cooper Black";
 		color: #99C55E;
@@ -59,14 +63,10 @@
 		
 	}
 	
-	
 	.genre-container {
 		padding-left: 13px;
 		margin-top: 50px;
 	}
-	
-	
-
 	
 	.genre-item {
 		float: left;
@@ -77,16 +77,16 @@
 		
 	.container-genre-main {
 			width: 900px;
-			height: 220px;
+			min-height: 225px;
 			border-style: solid;
 			border-width: 2px;
-			margin-bottom: 4px;
+			margin-bottom: 5px;
 		}
 	
 	.genre-left {
 		float: left;
 		width: 300px;
-		height: 200px;
+		min-height: 225px;
 		text-align: center;
 		padding: 8px;
 	}
@@ -94,11 +94,13 @@
 	.genre-right {
 		float: right;
 		width: 500px;
-		height: 200px;
+		min-height: 225px;
 		text-align: left;
 		margin: auto;
 	}
-	
+	.genre-right h2{
+		font-size: 20px;
+	}
 	.genre-text{
 		font-family: "Cooper Black";
 		color: black;

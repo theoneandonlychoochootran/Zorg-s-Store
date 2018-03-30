@@ -37,16 +37,15 @@
 
 <div class="row">
   <div class="genre-container">
-	<div class="genre-item"><a href="genre.php?id=123" class="genre-text">Fiction</a></div>
-	<div class="genre-item"><a href="genre.php?id=456" class="genre-text">Kitties</a></div>
-	<div class="genre-item"><a href="genre.php?id=789" class="genre-text">Nonfiction</a></div>
-	<div class="genre-item"><a href="genre.php?id=987" class="genre-text">Cooking</a></div>
-	<div class="genre-item"><a href="genre.php?id=654" class="genre-text">Other</a></div>
+	<div class="genre-item"><a href="genre.php?id=1" class="genre-text">Fiction</a></div>
+	<div class="genre-item"><a href="genre.php?id=2" class="genre-text">Kitties</a></div>
+	<div class="genre-item"><a href="genre.php?id=3" class="genre-text">Nonfiction</a></div>
+	<div class="genre-item"><a href="genre.php?id=4" class="genre-text">Cooking</a></div>
+	<div class="genre-item"><a href="genre.php?id=5" class="genre-text">Other</a></div>
   </div>
 </div>
   
 </div>
-<br>
 
 <?php include 'footer.php';?>
 
