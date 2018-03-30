@@ -37,11 +37,11 @@
 
 <div class="row">
   <div class="genre-container">
-	<div class="genre-item"><a href="genre.php?id=1" class="genre-text">Fiction</a></div>
-	<div class="genre-item"><a href="genre.php?id=2" class="genre-text">Kitties</a></div>
-	<div class="genre-item"><a href="genre.php?id=3" class="genre-text">Nonfiction</a></div>
-	<div class="genre-item"><a href="genre.php?id=4" class="genre-text">Cooking</a></div>
-	<div class="genre-item"><a href="genre.php?id=5" class="genre-text">Other</a></div>
+	<div class="genre-item"><a href="genre.php?genre=Fiction" class="genre-text">Fiction</a></div>
+	<div class="genre-item"><a href="genre.php?genre=Kitties" class="genre-text">Kitties</a></div>
+	<div class="genre-item"><a href="genre.php?genre=Nonfiction" class="genre-text">Nonfiction</a></div>
+	<div class="genre-item"><a href="genre.php?genre=Cooking" class="genre-text">Cooking</a></div>
+	<div class="genre-item"><a href="genre.php?genre=Other" class="genre-text">Other</a></div>
   </div>
 </div>
   

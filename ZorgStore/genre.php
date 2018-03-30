@@ -1,6 +1,6 @@
 <?php include 'navigation.php';?>
-<?php $id = $_GET['id'];
-	  $sql = "SELECT book_id, title, price, short_description, book_pic FROM books WHERE book_id IN (SELECT book_id FROM category_book WHERE category_id = '$id')";
+<?php $id = $_GET['genre'];
+	  $sql = "SELECT book_id, title, price, short_description, book_pic FROM books WHERE book_id IN (SELECT book_id FROM category_book WHERE category_id IN(SELECT category_id FROM categories WHERE category_name = '$id'))";
 	  $result = $conn->query($sql);
 ?>
 <body>
