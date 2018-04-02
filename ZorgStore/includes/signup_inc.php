@@ -37,7 +37,7 @@ if (isset($_POST['signup']))
 	}
 	else
 	{
-		$sql = "SELECT * FROM customers WHERE user_nid	='$uid'";
+		$sql = "SELECT * FROM customers WHERE user_id ='$uid'";
 		$result = mysqli_query($conn, $sql);
 		$rCheck = mysqli_num_rows($result);
 		

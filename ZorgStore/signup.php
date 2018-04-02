@@ -9,13 +9,10 @@ include 'footer.php';
 
 <style>
 
-	body 
-	{
-		font-family: "Cooper Black", Helvetica, sans-serif;
-	}
 	
 	input[type=text], input[type=password]
 	{
+	font-family: "Cooper Black", Helvetica, sans-serif;
     width: 25%;
     padding: 5px;	
 	margin: 8px 8px;
@@ -41,6 +38,7 @@ include 'footer.php';
 	
 	button[type="submit"]
 	{
+	font-family: "Cooper Black", Helvetica, sans-serif;	
 	background-color: #3F47CC;
     color: white;
     padding: 14px 20px;
@@ -58,7 +56,7 @@ include 'footer.php';
 				 
 			
 	
-			<p style="font-size:20px; margin: 0px 8px;">Sign Up For Zorg Stores! </p></br>
+			<p style="font-size:20px; margin: 0px 8px;font-family: 'Cooper Black', Helvetica, sans-serif;">Sign Up For Zorg Stores! </p></br>
 				<form method="POST" action="includes/signup_inc.php">
 				<input type="text" placeholder="Enter Username (Between 5 and 20 characters)" name="username" minlength="5" maxlength="20" required>
 				</br>

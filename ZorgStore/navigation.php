@@ -27,14 +27,15 @@ include('dbconnect.php');
 	  <ul class="nav navbar-nav navbar-right">
 		<form class="form-inline">
 		<?php if (!isset($_SESSION['user_id'])){?>
-		<a href="login.php" class="btn btn-link">Log In</a>
 		<a href="signup.php" class="btn btn-link">Sign Up</a>
+		<a href="login.php" class="btn btn-link">Log In</a>
 		<?php }else {?>
+		<a href="profile.php" class="bth btn-link">Welcome, <?php echo $_SESSION['user_id'] ?></a>
 		<a href="logout.php" class="btn btn-link">Log Out</a>
 		<?php }?>
 		
 	  </ul>
-  </form>
+   </form>
     </div>
   </div>
 </nav>

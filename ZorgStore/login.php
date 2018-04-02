@@ -8,14 +8,10 @@ include 'footer.php';
 <html>
 
 <style>
-
-body 
-	{
-		font-family: "Cooper Black", Helvetica, sans-serif;
-	}
 	
 	input[type=text], input[type=password]
 	{
+	font-family: "Cooper Black", Helvetica, sans-serif;	
     width: 25%;
     padding: 5px;	
 	margin: 8px 8px;
@@ -26,6 +22,7 @@ body
 	
 	button[type="submit"]
 	{
+	font-family: "Cooper Black", Helvetica, sans-serif;	
 	background-color: #3F47CC;
     color: white;
     padding: 14px 20px;
@@ -38,7 +35,7 @@ body
 </style>
 
 	<body>
-	<p style="font-size:20px; margin: 0px 8px;">Log In! </p></br>
+	<p style="font-size:20px; margin: 0px 8px;font-family: 'Cooper Black', Helvetica, sans-serif;">Log In! </p></br>
 			<form method="POST" action="includes/login_inc.php">
 			<input type="text" name="username" placeholder="Username" minlength="5" maxlength="20"></br>
 			<input type="password" name="password" placeholder="Password" minlength= "8"></br>
