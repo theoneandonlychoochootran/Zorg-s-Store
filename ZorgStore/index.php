@@ -47,6 +47,9 @@
   
 </div>
 
+</br>
+<div class="genre-item"><a href="author.php?author=Twain" class="genre-text">Featured Author!</a></div>
+
 <?php include 'footer.php';?>
 
 </body>
