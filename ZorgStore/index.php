@@ -38,10 +38,10 @@
 <div class="row">
   <div class="genre-container">
 	<div class="genre-item"><a href="genre.php?genre=Fiction" class="genre-text">Fiction</a></div>
-	<div class="genre-item"><a href="genre.php?genre=Kitties" class="genre-text">Kitties</a></div>
+	<div class="genre-item"><a href="genre.php?genre=Children" class="genre-text">Children's</a></div>
 	<div class="genre-item"><a href="genre.php?genre=Nonfiction" class="genre-text">Nonfiction</a></div>
 	<div class="genre-item"><a href="genre.php?genre=Cooking" class="genre-text">Cooking</a></div>
-	<div class="genre-item"><a href="genre.php?genre=Other" class="genre-text">Other</a></div>
+	<div class="genre-item"><a href="prdctindex.php" class="genre-text">View All</a></div>
   </div>
 </div>
   

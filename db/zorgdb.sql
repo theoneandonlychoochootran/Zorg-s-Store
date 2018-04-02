@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 28, 2018 at 10:11 PM
+-- Generation Time: Apr 02, 2018 at 06:56 AM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -149,7 +149,17 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,
   PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`category_id`, `category_name`) VALUES
+(1, 'Fiction'),
+(2, 'Children'),
+(3, 'Nonfiction'),
+(4, 'Cooking');
 
 -- --------------------------------------------------------
 
@@ -165,7 +175,27 @@ CREATE TABLE IF NOT EXISTS `category_book` (
   PRIMARY KEY (`category_book_id`),
   KEY `book_id` (`book_id`),
   KEY `category_id` (`category_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `category_book`
+--
+
+INSERT INTO `category_book` (`category_book_id`, `category_id`, `book_id`) VALUES
+(1, 3, 1),
+(2, 4, 2),
+(3, 3, 3),
+(4, 3, 4),
+(5, 1, 5),
+(6, 1, 6),
+(7, 1, 7),
+(8, 1, 8),
+(9, 2, 9),
+(10, 2, 10),
+(11, 1, 11),
+(12, 1, 12),
+(13, 2, 13),
+(14, 2, 14);
 
 -- --------------------------------------------------------
 
@@ -205,13 +235,6 @@ INSERT INTO `customers` (`customer_cd`, `user_id`, `password`, `email`, `city`, 
 ALTER TABLE `author_book`
   ADD CONSTRAINT `author_book_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `authors` (`author_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `author_book_ibfk_2` FOREIGN KEY (`book_id`) REFERENCES `books` (`book_id`);
-
---
--- Constraints for table `category_book`
---
-ALTER TABLE `category_book`
-  ADD CONSTRAINT `category_book_ibfk_1` FOREIGN KEY (`book_id`) REFERENCES `books` (`book_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `category_book_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
