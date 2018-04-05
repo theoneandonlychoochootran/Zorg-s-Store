@@ -5,9 +5,10 @@ session_start();
 include('dbconnect.php'); 
 ?>
 <head>
-  <title>Zorg Books</title>
+  <title>Zorg Books</title>;
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
   <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
    <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -22,8 +23,23 @@ include('dbconnect.php');
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
+	  <form class="form-inline">
 		<a href="#" class="btn btn-link">Shopping Cart</a>
+		<a href="prdctindex.php" class="btn btn-link">Products</a>
+		<a href="author.php?author=Twain" class="btn btn-link">Featured Author</a>
+		<div class="dropdown">
+			<button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+			Genres
+			<span class="caret"></span></button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="genre.php?genre=Fiction"> Fiction</a>
+				<a class="dropdown-item" href="genre.php?genre=Children"> Children's</a>
+				<a class="dropdown-item" href="genre.php?genre=Nonfiction"> Nonfiction</a>
+				<a class="dropdown-item" href="genre.php?genre=Cooking"> Cooking</a>
+			</div>
+		</div>
       </ul>
+	  </form>
 	  <ul class="nav navbar-nav navbar-right">
 		<form class="form-inline">
 		<?php if (!isset($_SESSION['user_id'])){?>

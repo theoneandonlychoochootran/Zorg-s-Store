@@ -37,6 +37,34 @@
 		color: #99C55E;
 		text-decoration: none;
 	}
+	
+	.mavbar .dropdown-:hover{
+		text-decoration: none;
+		color: #99C55E;
+	}
+	
+	.dropdown-toggle{
+	text-decoration: none;
+	}
+	
+	.dropdown-toggle:hover{
+		text-decoration: none;
+		color: #99C55E;
+	}
+	
+	.navbar .dropdown{
+		position: relative;
+	}
+	.navbar .dropdown-item{
+		font-family: "Cooper Black";
+		color: #99C55E;
+	}
+	
+	.navbar .dropdown-menu{
+		position: absolute;
+		background-color: #3F47CD;
+	}
+	
 	.btn-link {
 		font-family: "Cooper Black";
 		color: #99C55E;
