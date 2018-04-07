@@ -44,7 +44,7 @@
 	}
 	
 	.dropdown-toggle{
-	text-decoration: none;
+	text-decoration: none;	
 	}
 	
 	.dropdown-toggle:hover{
@@ -105,13 +105,14 @@
 		
 	.container-genre-main {
 			width: 900px;
-			min-height: 225px;
+			min-height: 280px;
 			border-style: solid;
 			border-width: 2px;
 			margin-bottom: 5px;
 		}
 	
 	.genre-left {
+		margin-top: 25px;
 		float: left;
 		width: 300px;
 		min-height: 225px;
