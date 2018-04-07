@@ -15,6 +15,7 @@ if ($result->num_rows > 0) {
 		</div>
 		<div class="genre-right">
 			<h2><?php echo $row["title"]?></h2>
+			<p><?php echo implode(' ', array_slice(explode(' ', $row['short_description']), 0, 25)); ?>...</p>
 			<p>Price: $<?php echo $row["price"]?></p>
 			<a href=<?php echo 'product.php?id=' . $row['book_id'] ?> class = "btn btn-basic jbbutton">View Product </a>
 		</div>

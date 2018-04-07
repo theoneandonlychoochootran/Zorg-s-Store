@@ -25,11 +25,12 @@ if ($result->num_rows > 0) {
 	<div class="container container-genre-main">
 	<div class="genre-row">
 		<div class="genre-left">
-			<a href="product.php?id=<?php echo $id ?>"> <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($pic).'" width="100" height="150"/>';?> </a>
+			<a href="product.php?id=<?php echo $id ?>"> <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($pic).'" width="133" height="200"/>';?> </a>
 		</div>
 		<div class="genre-right">
 		<h2> <?php echo $title;  ?> </h2>
 		<p> <?php echo $name . " " .$namel; ?></p>
+		<p><?php echo implode(' ', array_slice(explode(' ', $row['short_description']), 0, 25)); ?>...</p>
 		<p>Price: <?php echo $price ?> </p>
 		<a href="product.php?id= <?php  echo $id; ?>" class = "btn btn-basic jbbutton">View Product </a>
 		</div>
@@ -43,11 +44,12 @@ if ($result->num_rows > 0) {
  else {
 
 	echo "We have no books for sale!.";
-}
+} ?>
 
-	
+</br>
+</br>	
 
- include 'footer.php';?>
+<?php include 'footer.php';?>
 
 </body>
 </html>

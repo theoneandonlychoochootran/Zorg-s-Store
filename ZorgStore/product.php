@@ -1,6 +1,6 @@
 <?php include 'navigation.php';?>
 <?php $id = $_GET['id'];
-	  $sql = "SELECT title,price, short_description, book_pic FROM books WHERE book_id='$id'";
+	  $sql = "SELECT title,price, short_description, book_pic, quantity FROM books WHERE book_id='$id'";
 	  $result = $conn->query($sql);
 	  $row = $result->fetch_assoc();
 ?>
@@ -17,7 +17,13 @@
 		<h2><?php echo $row["title"]?></h2>
 		<p><?php echo $row["short_description"]?></p>
 		<p><?php echo "$" . $row["price"]?></p>
-		<a href="#" class = "btn btn-basic jbbutton">Add to cart </a>
+		<?php if($row["quantity"] <= 0)
+		{ ?>
+			<p>OUT OF STOCK</p>
+		<?php }
+		else { ?>
+			<a href="#" class = "btn btn-basic jbbutton">Add to cart </a>
+		<?php }?>
 	 </div>
    </div>
 </div>
