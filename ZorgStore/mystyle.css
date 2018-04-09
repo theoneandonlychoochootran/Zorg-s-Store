@@ -92,7 +92,7 @@
 	}
 	
 	.genre-container {
-		padding-left: 13px;
+		text-align: center;
 		margin-top: 50px;
 	}
 	
@@ -101,8 +101,14 @@
 		width: 222px;
 		height: 40px;
 		text-align: center;
+		margin: 20px;
 		}
 		
+	.genre-item p{
+		font-family: "Cooper Black";
+		font-size: 25px;
+	}	
+	
 	.container-genre-main {
 			width: 900px;
 			min-height: 280px;
