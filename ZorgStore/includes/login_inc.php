@@ -12,6 +12,7 @@ if (isset($_POST['login']))
 	 
 	if (empty($uid) == true || empty($pwd) == true)
 	{
+		$_SESSION['msg'] ='<br /><font style="Cooper Black" color="#FF0000">Please enter a username and password. </font>';
 		header("Location: ../login.php?login=empty");
 		exit();
 	}
@@ -23,7 +24,10 @@ if (isset($_POST['login']))
 		
 		if ($rCheck < 1)
 		{
-			header("Location: ../login.php?login=error1");
+			
+			$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Invalid psername and/or password. </font>';
+			include('login.php');
+			header("Location: ../login.php?login=error");
 			exit();
 		}
 		else
@@ -35,6 +39,7 @@ if (isset($_POST['login']))
 			
 			if ($pwHash == $row['password'])
 			{
+				unset ($_SESSION['msg']);
 				header("Location: ../index.php?login=yes");
 					$_SESSION['user_id'] = $row['user_id'];
 					$_SESSION['email'] = $row['email'];
@@ -45,7 +50,8 @@ if (isset($_POST['login']))
 			}
 			else
 			{
-				header("Location: ../login.php?login=error3");
+				$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Invalid psername and/or password. </font>';
+				header("Location: ../login.php?login=error");
 				exit();
 			}
 			
