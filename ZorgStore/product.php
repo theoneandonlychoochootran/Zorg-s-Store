@@ -1,6 +1,6 @@
 <?php include 'navigation.php';?>
 <?php $id = $_GET['id'];
-	  $sql = "SELECT title,price, short_description, book_pic, quantity FROM books WHERE book_id='$id'";
+	  $sql = "SELECT title,price, short_description, book_pic, quantity, authors.first_name, authors.last_name FROM books, authors, author_book WHERE books.book_id='$id' AND author_book.book_id = '$id' AND authors.author_id = author_book.author_id";
 	  $result = $conn->query($sql);
 	  $row = $result->fetch_assoc();
 ?>
@@ -15,6 +15,7 @@
 	 </div>
 	 <div class ="right-main">
 		<h2><?php echo $row["title"]?></h2>
+		<p><?php echo $row["first_name"] . " " . $row["last_name"]?> </p>
 		<p><?php echo $row["short_description"]?></p>
 		<p><?php echo "$" . $row["price"]?></p>
 		<?php if($row["quantity"] <= 0)
