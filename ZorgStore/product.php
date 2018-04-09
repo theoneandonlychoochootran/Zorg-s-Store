@@ -15,7 +15,7 @@
 	 </div>
 	 <div class ="right-main">
 		<h2><?php echo $row["title"]?></h2>
-		<p><?php echo $row["first_name"] . " " . $row["last_name"]?> </p>
+		<a href="author.php?author=<?php echo $row["last_name"] ?>"> <?php echo $row["first_name"] . " " . $row["last_name"] ?> </a>
 		<p><?php echo $row["short_description"]?></p>
 		<p><?php echo "$" . $row["price"]?></p>
 		<?php if($row["quantity"] <= 0)
