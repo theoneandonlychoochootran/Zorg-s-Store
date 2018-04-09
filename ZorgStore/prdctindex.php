@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
 
 	while($row = $result->fetch_assoc()) {
 		
-		$id = $row["book_id"];
+	$id = $row["book_id"];
 	$pic = $row["book_pic"];
 	$price = $row["price"];
 	$title = $row["title"];
@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
 		<div class="genre-right">
 		<h2> <?php echo $title;  ?> </h2>
 		<p> <?php echo $name . " " .$namel; ?></p>
-		<p><?php echo implode(' ', array_slice(explode(' ', $row['short_description']), 0, 25)); ?>...</p>
+		<p class="more" title="Read More"><?php echo $row["short_description"] ?></p>
 		<p>Price: <?php echo $price ?> </p>
 		<a href="product.php?id= <?php  echo $id; ?>" class = "btn btn-basic jbbutton">View Product </a>
 		</div>
@@ -50,6 +50,20 @@ if ($result->num_rows > 0) {
 </br>	
 
 <?php include 'footer.php';?>
+<script>
+$('.more').css({height:'20px', overflow:'hidden'});
+$('.more').on('click', function() {
+    var $this = $(this);
+    if ($this.data('open')) {
+        $this.animate({height:'20px'});
+        $this.data('open', 0);
 
+    }
+    else {
+        $this.animate({height:'100%'});
+        $this.data('open', 1);
+    }
+});
+</script>
 </body>
 </html>
