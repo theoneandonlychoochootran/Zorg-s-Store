@@ -34,7 +34,7 @@ if (isset($_SESSION['user_id'])){
 	  <form class="form-inline">
 		<a href="#" class="btn btn-link">Shopping Cart</a>
 		<a href="prdctindex.php" class="btn btn-link">Products</a>
-		<a href="author.php?author=Twain" class="btn btn-link">Featured Author</a>
+		<a href="authorindex.php" class="btn btn-link">Authors</a>
 		<div class="dropdown">
 			<button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
 			Genres
