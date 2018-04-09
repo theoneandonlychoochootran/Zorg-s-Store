@@ -1,6 +1,6 @@
 <?php include 'navigation.php';?>
 <?php $id = $_GET['id'];
-	  $sql = "SELECT title,price, short_description, book_pic, quantity, authors.first_name, authors.last_name FROM books, authors, author_book WHERE books.book_id='$id' AND author_book.book_id = '$id' AND authors.author_id = author_book.author_id";
+	  $sql = "SELECT books.book_id,title,price, short_description, book_pic, quantity, authors.first_name, authors.last_name FROM books, authors, author_book WHERE books.book_id='$id' AND author_book.book_id = '$id' AND authors.author_id = author_book.author_id";
 	  $result = $conn->query($sql);
 	  $row = $result->fetch_assoc();
 ?>
@@ -22,8 +22,14 @@
 		{ ?>
 			<p>OUT OF STOCK</p>
 		<?php }
-		else { ?>
-			<a href="#" class = "btn btn-basic jbbutton">Add to cart </a>
+		else {
+			// redirects user to login page when "Add to cart" is 
+			// clicked if they're not logged in already
+			if (isset($_SESSION['user_id'])){
+			$filename = "add_to_cart.php?id=" .$row['book_id'];
+			}else{
+			$filename = "login.php";}?>
+			<a href=<?php echo $filename ?> class = "btn btn-basic jbbutton">Add to cart </a>
 		<?php }?>
 	 </div>
    </div>
