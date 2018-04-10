@@ -3,14 +3,7 @@
 <?php
 session_start(); 
 include('dbconnect.php');
-
-if (isset($_SESSION['user_id'])){
-		$userID = $_SESSION['user_id'];
-		$cart=[];
-		$cart[1] = 'apple'; // for testing purposes
-		$cart[2] = 'banana'; // this one too; remove after testing
-		setcookie($userID, json_encode($cart));
-		}
+include ('cookie.php');
 ?>
 <head>
   <title>Zorg Books</title>
