@@ -48,6 +48,7 @@ include ('cookie.php');
 		<a href="login.php" class="btn btn-link">Log In</a>
 		<?php }else {?>
 		<a href="profile.php" class="bth btn-link">Welcome, <?php echo $_SESSION['user_id'] ?></a>
+		<a href=cart.php class = "btn btn-link">Shopping Cart </a>
 		<a href="logout.php" class="btn btn-link">Log Out</a>
 		<?php }?>
 		

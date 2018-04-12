@@ -1,31 +1,28 @@
-<?php include 'navigation.php' ?>
+<?php include ('navigation.php');
+		$id = $_GET['id'];
+		$quantity = '1';	// won't be hard-coded in release
 
-<?php 	$id = $_GET['id'];
-		$sql = "SELECT books.book_id,title,price, short_description, book_pic, quantity, authors.first_name, authors.last_name FROM books, authors, author_book WHERE books.book_id='$id' AND author_book.book_id = '$id' AND authors.author_id = author_book.author_id";
-		$result = $conn->query($sql);
-		$row = $result->fetch_assoc();
+if(isset($_COOKIE[$user_id])){
+	
+	$cart = json_decode($_COOKIE[$user_id], true);
 
-
-// the following should add a book to the cookie
-// so far, doesn't quite work yet
-
-		//if($userID[$id] > 0){
-			//$quantity = $quantity + 1;
-			//setcookie($userID[$id], $quantity);
-		//}
-		//else{
-			//$quantity = 1;
-			//setcookie($userID[$id], $quantity);
-		//}
+	if(!isset($cart[$id])){
+		$cart[$id] = $quantity;
+		setcookie($user_id, json_encode($cart), time() + (86400 * 30), '/');
+	}
+	else{
+		$previous_quantity = $cart[$id];
+		$cart[$id] = $previous_quantity + $quantity;
 		
+		setcookie($user_id, json_encode($cart), time() + (86400 * 30), '/');
+	}
+}
 ?>
 
 <h2>Added to Cart</h2>
+<p>Your selected book displayed here</p>
 
-<?php echo $row['title']?>
-
-<br>
-<br>
-<a href=index.php class = "btn btn-basic jbbutton">Continue shopping </a>														
+<a href=cart.php class = "btn btn-basic jbbutton">Go to Cart </a><br><br>
+<a href=index.php class = "btn btn-basic jbbutton">Continue shopping </a><br>
 
 <?php include 'footer.php';?>
