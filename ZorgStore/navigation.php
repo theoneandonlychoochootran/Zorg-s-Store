@@ -25,7 +25,10 @@ include ('cookie.php');
   <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
 	  <form class="form-inline">
-		<a href="#" class="btn btn-link">Shopping Cart</a>
+	  <?php if (!isset($_SESSION['user_id'])){ ?>
+	  <?php }else {?>
+		<a href=cart.php class = "btn btn-link">Shopping Cart </a>
+	  <?php } ?>
 		<a href="prdctindex.php" class="btn btn-link">Products</a>
 		<a href="authorindex.php" class="btn btn-link">Authors</a>
 		<div class="dropdown">
@@ -48,7 +51,6 @@ include ('cookie.php');
 		<a href="login.php" class="btn btn-link">Log In</a>
 		<?php }else {?>
 		<a href="profile.php" class="bth btn-link">Welcome, <?php echo $_SESSION['user_id'] ?></a>
-		<a href=cart.php class = "btn btn-link">Shopping Cart </a>
 		<a href="logout.php" class="btn btn-link">Log Out</a>
 		<?php }?>
 		

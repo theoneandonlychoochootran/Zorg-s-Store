@@ -140,12 +140,46 @@
 		overflow:hidden;
 	}
 	
+	.container-cart-main {
+		width: 390px;
+		min-height: 100px;
+		border-style: solid;
+		border-width: 2px;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		overflow: hidden;
+		}
+		
+	.cart-left {
+		margin-top: 25px;
+		float: left;
+		width: 70px;
+		min-height: 100px;
+		text-align: center;
+		padding: 8px;
+	}
+	
+	.cart-right {
+		float: right;
+		width: 300px;
+		min-height: 80px;
+		text-align: left;
+		margin: auto;
+		padding: 5px;
+		padding-left: 0px;
+		overflow:hidden;
+	}
+	
 	.genre-right .more:hover{
 		cursor: pointer;
 		
 	}
 	
 	.genre-right h2{
+		font-size: 20px;
+	}
+	
+	.cart-right h2{
 		font-size: 20px;
 	}
 	.genre-text{
@@ -175,6 +209,11 @@
 		color: #fEF200;
 	}
 
+	.invoice-container{
+		margin-left: 20px;
+		margin-top: 5px;
+		
+	}
 	
     footer {
       background-color: #fEF200;
