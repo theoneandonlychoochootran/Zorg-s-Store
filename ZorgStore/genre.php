@@ -31,7 +31,8 @@ else {
 <?php }  ?>
 </br>
 </br>
-<?php include 'footer.php';?>
+
+
 <script>
 $('.more').css({height:'20px', overflow:'hidden'});
 $('.more').on('click', function() {

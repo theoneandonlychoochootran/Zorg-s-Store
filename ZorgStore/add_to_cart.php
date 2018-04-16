@@ -24,5 +24,3 @@ if(isset($_COOKIE[$user_id])){
 
 <a href=cart.php class = "btn btn-basic jbbutton">Go to Cart </a><br><br>
 <a href=index.php class = "btn btn-basic jbbutton">Continue shopping </a><br>
-
-<?php include 'footer.php';?>

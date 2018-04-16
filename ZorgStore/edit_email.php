@@ -2,7 +2,6 @@
 <html lang="en">
 <?php
 include('navigation.php');
-include ('footer.php'); 
 ?>
 <link rel="stylesheet" type="text/css" href="edit_style.css">
 <body>

@@ -1,6 +1,6 @@
 <?php
 include 'navigation.php';
-include 'footer.php';
+
 ?>
 
 <!DOCTYPE HTML>

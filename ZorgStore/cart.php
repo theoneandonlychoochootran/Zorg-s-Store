@@ -43,4 +43,3 @@ $cart = json_decode($_COOKIE[$user_id], true);
 </br>
 </br>
 </br>
-<?php include 'footer.php';?>

@@ -37,6 +37,5 @@ if ($result->num_rows > 0) {
 </br>
 </br>	
 
-<?php include 'footer.php';?>
 </body>
 </html>

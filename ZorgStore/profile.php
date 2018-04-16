@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 include('navigation.php');
-include ('footer.php'); 
+
 ?>
 <link rel="stylesheet" type="text/css" href="profilestyle.css">
 <body>
