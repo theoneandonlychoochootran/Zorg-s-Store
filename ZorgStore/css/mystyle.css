@@ -1,0 +1,228 @@
+	a{	
+		color: black;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+	
+	.jumbotron {
+	  background-color: #3F47CD;
+	  padding: 1%;
+      margin-bottom: 0;
+	  border-radius: 0;
+    }
+	
+	.jumbotron a{
+	 font-family: "Cooper Black";
+	 color: pink;
+	}
+	
+	.container h1{
+		text-align: center;
+		padding-bottom: 2%;
+		
+	}
+	
+   .navbar {
+	  background-color: #3F47CC;
+	  margin-bottom: 5%;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  padding-right: 20px;
+      border-radius: 0;
+    }
+	.navbar a:hover{
+		color: #99C55E;
+		text-decoration: none;
+	}
+	
+	.mavbar .dropdown-:hover{
+		text-decoration: none;
+		color: #99C55E;
+	}
+	
+	.dropdown-toggle{
+	text-decoration: none;	
+	}
+	
+	.dropdown-toggle:hover{
+		text-decoration: none;
+		color: #99C55E;
+	}
+	
+	.navbar .dropdown{
+		position: relative;
+	}
+	.navbar .dropdown-item{
+		font-family: "Cooper Black";
+		color: #99C55E;
+	}
+	
+	.navbar .dropdown-menu{
+		position: absolute;
+		background-color: #3F47CD;
+	}
+	
+	.btn-link {
+		font-family: "Cooper Black";
+		color: #99C55E;
+	}
+	
+	.container-jb {
+		width: 1000px;
+		min-height:450px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	
+	.fb-jb h1{
+		font-family: "Cooper Black";
+	}
+	
+	.col-sm-4 {
+		text-align: center;
+	}
+	
+	.row-jb {
+		width: 100%;
+		min-height:450px;
+		
+	}
+	
+	.genre-container {
+		text-align: center;
+		margin-top: 50px;
+	}
+	
+	.genre-item {
+		float: left;
+		width: 222px;
+		height: 40px;
+		text-align: center;
+		margin: 20px;
+		}
+		
+	.genre-item p{
+		font-family: "Cooper Black";
+		font-size: 25px;
+	}	
+	
+	.container-genre-main {
+			width: 900px;
+			min-height: 280px;
+			border-style: solid;
+			border-width: 2px;
+			margin-bottom: 5px;
+			overflow: hidden;
+		}
+	
+	
+	
+	.genre-left {
+		margin-top: 25px;
+		float: left;
+		width: 300px;
+		min-height: 225px;
+		text-align: center;
+		padding: 8px;
+	}
+
+	.genre-right {
+		float: right;
+		width: 500px;
+		min-height: 225px;
+		text-align: left;
+		margin: auto;
+		padding: 5px;
+		padding-left: 0px;
+		overflow:hidden;
+	}
+	
+	.container-cart-main {
+		width: 390px;
+		min-height: 100px;
+		border-style: solid;
+		border-width: 2px;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		overflow: hidden;
+		}
+		
+	.cart-left {
+		margin-top: 25px;
+		float: left;
+		width: 70px;
+		min-height: 100px;
+		text-align: center;
+		padding: 8px;
+	}
+	
+	.cart-right {
+		float: right;
+		width: 300px;
+		min-height: 80px;
+		text-align: left;
+		margin: auto;
+		padding: 5px;
+		padding-left: 0px;
+		overflow:hidden;
+	}
+	
+	.genre-right .more:hover{
+		cursor: pointer;
+		
+	}
+	
+	.genre-right h2{
+		font-size: 20px;
+	}
+	
+	.cart-right h2{
+		font-size: 20px;
+	}
+	.genre-text{
+		font-family: "Cooper Black";
+		color: black;
+		font-size: 25px;
+	}
+
+	.left-main {
+		float: left;
+		text-align: right;
+		min-height: 450px;
+		width: 450px;
+		margin-bottom: 100px;
+	}
+	
+	.right-main{
+		float: right;
+		min-height: 450px;
+		width: 450px;
+		padding: 25px;
+		margin-bottom: 100px;
+	}
+	
+	.jbbutton{
+		background-color: #3F47CC;
+		color: #fEF200;
+	}
+
+	.invoice-container{
+		margin-left: 20px;
+		margin-top: 5px;
+		
+	}
+	
+    footer {
+      background-color: #fEF200;
+	  bottom: 0;
+	  margin-top: 50px;
+	  text-align:center;
+	  position:fixed;
+	  width: 100%;
+	  font-family: "Cooper Black";
+    }	
+	
+	
