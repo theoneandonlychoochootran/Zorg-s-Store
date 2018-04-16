@@ -17,6 +17,7 @@
 	.jumbotron a{
 	 font-family: "Cooper Black";
 	 color: pink;
+	 text-shadow: 2px 2px 8px #62B7E4;
 	}
 	
 	.container h1{
@@ -208,11 +209,26 @@
 		background-color: #3F47CC;
 		color: #fEF200;
 	}
+	.graybutton{
+		background-color: #C1CDEB;
+		color: black;
+	}
 
 	.invoice-container{
 		margin-left: 20px;
 		margin-top: 5px;
 		
+	}
+	#container_added_to_cart{
+		padding-top: 10px;
+		text-align: center;
+	}
+	
+	.container_left{
+		float: left;
+	}
+	.container_right{
+		float: right;
 	}
 	
     footer {

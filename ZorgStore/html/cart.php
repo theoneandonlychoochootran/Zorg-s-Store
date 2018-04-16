@@ -1,11 +1,4 @@
 <?php include 'navigation/navigation.php';
-
-// get the book_id and quantities from the cookie
-// create sql queries to display:
-// title
-// book_pic
-// quantity
-// price
 $cart = json_decode($_COOKIE[$user_id], true);
 ?>
 

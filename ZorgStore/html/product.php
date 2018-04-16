@@ -23,8 +23,6 @@
 			<p>OUT OF STOCK</p>
 		<?php }
 		else {
-			// redirects user to login page when "Add to cart" is 
-			// clicked if they're not logged in already
 			if (isset($_SESSION['user_id'])){
 			$filename = "add_to_cart.php?id=" .$row['book_id'];
 			}else{
