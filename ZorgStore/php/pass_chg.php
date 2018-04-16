@@ -10,6 +10,7 @@
 	
 	if ($newPass1 != $newPass2)
 	{
+		$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Passwords do not match. </font>';
 		header("Location: ./../html/pass_edit.php?error");
 		exit();
 	}
@@ -35,25 +36,29 @@
 		
 				if(!mysqli_query($conn,$sql))
 				{
+					$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Did not connect to database. Try again later. </font>';
 					header("Location: ../../html/address_edit.php?update_add=fail");
 					exit();
 				}	
 				else
 				{
+					$_SESSION['msg'] = '<br /><font style="Cooper Black">Password successfully changed. </font>';
 					header("Location: ./../html/profile.php?pass_chg=success");
 					exit();
 				}
 			}
 			else
 			{
-				header("Location: ./../html/pass_edit.php?error3");
+				$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Old password detected. Please create a new password.</font>';
+				header("Location: ./../html/pass_edit.php?error");
 				exit();
 			}
 					
 		}
 		else
 		{
-			header("Location: ./../html/pass_edit.php?error2");
+			$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Passwords do not match.</font>';
+			header("Location: ./../html/pass_edit.php?error");
 			exit();
 		}
 	}

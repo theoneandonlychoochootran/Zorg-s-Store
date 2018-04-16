@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include'dbconnect.php';
 
 if (isset($_POST['signup']))
@@ -15,23 +15,27 @@ if (isset($_POST['signup']))
 	// Error checking for empty fields. Since we are using HTML to check for this, they shouldnt be empty, but... 
 	if (empty($uid) ||empty($upwd) ||empty($uemail) ||empty($city) ||empty($state) || empty($zip))
 	{
+	$_SESSION['msg'] ='<br /><font style="Cooper Black" color="#FF0000">Please enter a username and password. </font>';
 	header("Location: ./../html/signup.php?login=empty");
 	exit();
 		
 	}
 	elseif($upwd != $pwd2)
 	{
+		$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Passwords do not match.</font>';
 		header("Location: ./../html/signup.php?login=badPwd2");
 		exit();
 	}
 	else
 	if(!filter_var($uemail,FILTER_VALIDATE_EMAIL))
 	{
+		$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Please enter a valid e-mail. </font>';
 		header("Location: ./../html/signup.php?login=invalid2");
 		exit();
 	}
 	elseif (strlen($upwd) < 8)
 	{
+		$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Password is too short. Please enter a password of at least 8 characters. </font>';
 		header("Location: ./../html/signup.php?login=Pass2Short");
 		exit();
 	}
@@ -43,6 +47,7 @@ if (isset($_POST['signup']))
 		
 		if ($rCheck > 0)
 		{
+			$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Username already exists. Please choose another.</font>';
 			header("Location: ./../html/signup.php?login=error1");
 			exit();
 		}
@@ -50,6 +55,7 @@ if (isset($_POST['signup']))
 		{
 			if (!preg_match('/^[0-9]{5}$/',$zip))
 			{
+				$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Invalid ZIP format. Please enter a valid 5-digit ZIP code.</font>';
 				header("Location: ./../html/signup.php?login=error");
 				exit();
 			}
@@ -63,6 +69,7 @@ if (isset($_POST['signup']))
 			
 			if(!mysqli_query($conn,$sql))
 			{
+				$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Unable to connect to database. Please try again later. </font>';
 				header("Location: ./../html/signup.php?signup=fail");
 				exit();
 			}	
@@ -70,13 +77,12 @@ if (isset($_POST['signup']))
 			{
 				header("Location: ./../html/signup.php?signup=success");
 				exit();
-			
 			}
 		}
 	}
-
 	{
-	header("Location: ./../html/signup.php?login=error");
+	$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Unable to connect to database. Please try again later. </font>';
+	header("Location: ./../html/signup.php?signup=error");
 	exit();
 	}
 }

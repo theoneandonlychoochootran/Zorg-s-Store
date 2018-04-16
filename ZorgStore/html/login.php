@@ -33,10 +33,6 @@ include 'navigation/navigation.php';
     opacity: 0.9;	
 	}
 	
-	div.errMsg
-	{
-		content: "Invalid username/password";
-	}
 </style>
 
 	<body>
@@ -46,8 +42,8 @@ include 'navigation/navigation.php';
 			<input type="password" name="password" placeholder="Password" minlength= "8"></br>
 			<button type="submit" name="login">Log In</button>
 			
-			<div class="errMsgBlank"><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; unset($_SESSION['msg']); ?><div>
+			<div><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; unset($_SESSION['msg']); ?><div>
 		</form>
-	<?php if (isset($_SESSION['msg'])) {unset($_SESSION['msg']);} ?>
+
 	</body>
 </html>

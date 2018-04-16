@@ -25,7 +25,7 @@ if (isset($_POST['login']))
 		if ($rCheck < 1)
 		{
 			
-			$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Invalid psername and/or password. </font>';
+			$_SESSION['msg'] = '<br /><font style="Cooper Black" color="#FF0000">Invalid username and/or password. </font>';
 			header("Location: ./../html/login.php?login=error");
 			exit();
 		}

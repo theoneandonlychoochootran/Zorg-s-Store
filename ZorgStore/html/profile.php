@@ -27,4 +27,5 @@ include('navigation/navigation.php');
 		
 </div>
 <form action="pass_edit.php"><button type="submit" name="password_ch">Change Password</button></form>
+<div><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; unset($_SESSION['msg']); ?><div>
 </body>
