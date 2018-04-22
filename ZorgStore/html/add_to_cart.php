@@ -1,6 +1,6 @@
 <?php include ('navigation/navigation.php');
 		$id = $_GET['id'];
-		$quantity = '1';
+		$quantity = $_GET['num'];
 
 if(isset($_COOKIE[$user_id])){
 	
