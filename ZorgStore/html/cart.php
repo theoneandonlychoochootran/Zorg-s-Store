@@ -20,6 +20,14 @@ $cart = json_decode($_COOKIE[$user_id], true);
 						<h2> <?php echo $row["title"];  ?> </h2>
 						<p>Price: $<?php echo $row["price"] ?> </p>
 						<p>Quantity: <?php echo $cart[$id]; ?> </p>
+						
+						<?php 
+						if (isset($_SESSION['user_id'])){
+			$filename = "remove_from_cart.php?id=" .$id;
+			}else{
+			$filename = "login.php";}?>
+			<a href=<?php echo $filename ?> class = "btn btn-basic jbbutton">Remove from cart </a>
+						
 					</div>
 					</div>
 			<h1></h1>
