@@ -36,14 +36,17 @@ include 'navigation/navigation.php';
 </style>
 
 	<body>
+	<div class="container">
+<div class="container-jb">  
 	<p style="font-size:20px; margin: 0px 8px;font-family: 'Cooper Black', Helvetica, sans-serif;">Log In! </p></br>
 			<form method="POST" action="../php/login_inc.php">
 			<input type="text" name="username" placeholder="Username" minlength="5" maxlength="20"></br>
 			<input type="password" name="password" placeholder="Password" minlength= "8"></br>
 			<button type="submit" name="login">Log In</button>
 			
-			<div><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; unset($_SESSION['msg']); ?><div>
+			<div><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; unset($_SESSION['msg']); ?></div>
 		</form>
-
+	</div>
+	</div>
 	</body>
 </html>

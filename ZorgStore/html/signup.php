@@ -51,6 +51,9 @@ include 'navigation/navigation.php';
 
 
 	<body>
+	
+		<div class="container">
+			<div class="container-jb">  
 			<p style="font-size:20px; margin: 0px 8px;font-family: 'Cooper Black', Helvetica, sans-serif;">Sign Up For Zorg Stores! </p></br>
 				<form method="POST" action="../php/signup_inc.php">
 				<input type="text" placeholder="Enter Username (Between 5 and 20 characters)" name="username" maxlength="20">
@@ -76,6 +79,8 @@ include 'navigation/navigation.php';
 				
 				<button type="submit" name="signup">Sign Up</button>	
 		</form>
-		<div><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; session_destroy(); ?><div>
+		<div><?php if(isset($_SESSION['msg'])) echo $_SESSION['msg']; session_destroy(); ?></div>
+		</div>
+	</div>
 	</body>
 </html>
