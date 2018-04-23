@@ -38,7 +38,6 @@ $cart = json_decode($_COOKIE[$user_id], true);
 		} ?>
 	
 </br>
-<a href=cart.php class = "btn btn-basic jbbutton">Update Cart </a>
 <a href=index.php class = "btn btn-basic jbbutton">Continue shopping </a>
 <a href=checkout.php class = "btn btn-basic jbbutton">CheckOut </a>
 </br>
