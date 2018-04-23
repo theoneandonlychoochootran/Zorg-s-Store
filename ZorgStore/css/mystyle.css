@@ -1,12 +1,7 @@
-	a{	
-		color: black;
-		text-decoration: none;
+	*{
+		font-family: "Cooper Black";
 	}
-
-	a:hover {
-		text-decoration: none;
-	}
-	
+		
 	.jumbotron {
 	  background-color: #3F47CD;
 	  padding: 1%;
@@ -16,15 +11,20 @@
 	
 	
 	.jumbotron a{
-	 font-family: "Cooper Black";
-	 color: pink;
-	 text-shadow: 2px 2px 8px #62B7E4;
+	 color: white;
+	 font-size:100px;
+	 text-shadow: 2px 2px 10px black;
+	 -webkit-transition:text-shadow .5s;transition:text-shadow .5s;
+	}
+	.jumbotron a:hover{
+		color: white;
+		text-decoration: none;
+		text-shadow: 5px 5px navy;
 	}
 	
 	.container h1{
 		text-align: center;
 		padding-bottom: 2%;
-		
 	}
 	
    .navbar {
@@ -35,11 +35,17 @@
 	  padding-right: 20px;
       border-radius: 0;
     }
-	.navbar a:hover{
+	.navbar a:link{
 		color: #99C55E;
 		text-decoration: none;
+	}.navbar a:visited{
+		color: #cc99cc;
+		text-decoration: none;
 	}
-	
+	.navbar a:hover{
+		color: #99ffff;
+		text-decoration: none;
+	}
 	.mavbar .dropdown-:hover{
 		text-decoration: none;
 		color: #99C55E;
@@ -54,24 +60,19 @@
 		color: #99C55E;
 	}
 	
-	.navbar .dropdown{
-		position: relative;
-	}
-	.navbar .dropdown-item{
-		font-family: "Cooper Black";
-		color: #99C55E;
-	}
-	
+	.navbar .dropdown{position: relative}
+	.navbar .dropdown-item{color: #99C55E}
 	.navbar .dropdown-menu{
 		position: absolute;
 		background-color: #3F47CD;
 	}
 	
-	.btn-link {
-		font-family: "Cooper Black";
-		color: #99C55E;
-	}
+	.btn-link {color: #99C55E;}
+	.btn-link:hover {color: #fEF200;}
 	
+	.dropdown-item:hover{
+		background-color: #330033
+	}
 	.container-jb {
 		width: 1000px;
 		min-height:450px;
@@ -210,10 +211,6 @@
 	.jbbutton{
 		background-color: #3F47CC;
 		color: #fEF200;
-	}
-	.graybutton{
-		background-color: #C1CDEB;
-		color: black;
 	}
 
 	.invoice-container{

@@ -13,10 +13,11 @@ include (__DIR__ .'./../../cookie/cookie.php');
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+   <link rel="shortcut icon" href="../img/my_favicon.png">
 </head>
 <div class="jumbotron">
   <div class="container text-center">
-	<h1><a href="index.php">Zorg Books!</a></h1>      
+	<h1><a href="index.php" class="btn btn-link">Zorg Books!</a></h1>      
   </div>
 </div>
 
@@ -50,7 +51,7 @@ include (__DIR__ .'./../../cookie/cookie.php');
 		<a href="signup.php" class="btn btn-link">Sign Up</a>
 		<a href="login.php" class="btn btn-link">Log In</a>
 		<?php }else {?>
-		<a href="profile.php" class="bth btn-link">Welcome, <?php echo $_SESSION['user_id'] ?></a>
+		<a href="profile.php" class="btn btn-link">Welcome, <?php echo $_SESSION['user_id'] ?></a>
 		<a href="logout.php" class="btn btn-link">Log Out</a>
 		<?php }?>
 		
