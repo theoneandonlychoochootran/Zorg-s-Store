@@ -6,7 +6,7 @@
 		<h1>Featured Books</h1>
 		</div>
 	</div>
-
+</br>
 <div class="carousel-wrap">
 <div id="zorgcarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
 

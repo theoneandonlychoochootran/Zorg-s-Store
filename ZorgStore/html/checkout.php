@@ -7,21 +7,15 @@ $total = 0;
 $cart= json_decode($_COOKIE[$user_id], true); ?>
 <?php 
 	while($id = key($cart)){
-		$sql = "SELECT title, price, book_pic FROM books WHERE book_id ='$id'";
+		$sql = "SELECT title, price FROM books WHERE book_id ='$id'";
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0) {
 			while($row = $result->fetch_assoc()) { 
 				//calculates total cost of books based on quantity
 				$total = $total + ($row["price"] * $cart[$id])?>
-				<div class="container-cart-main">
-					<div class="cart-left">
-						<a href="product.php?id=<?php echo $id ?>"> <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row["book_pic"]).'" width="50" height="75"/>';?> </a>
-					</div>
-					<div class="cart-right">
-						<h2> <?php echo $row["title"];  ?> </h2>
-						<p>Price: $<?php echo $row["price"] ?> </p>
-						<p>Quantity: <?php echo $cart[$id]; ?> </p>
-					</div>
+				<div class="container-cart-co">
+						<p> <?php echo $row["title"];  ?></p>
+						<p>Price: $<?php echo $row["price"]?> &emsp; Quantity: <?php echo $cart[$id]; ?> </p>
 					</div>
 			<h1></h1>
 		<?php }			

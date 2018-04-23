@@ -27,6 +27,7 @@
 		padding-bottom: 2%;
 	}
 	
+	
    .navbar {
 	  background-color: #3F47CC;
 	  margin-bottom: 5%;
@@ -80,6 +81,9 @@
 		margin-bottom: 50px;
 	}
 	
+	.fb-jb{
+		clear: both;
+	}
 	
 	.fb-jb h1{
 		font-family: "Cooper Black";
@@ -224,6 +228,16 @@
 		text-align: center;
 	}
 	
+	.container-cart-co{
+		width: 390px;
+		min-height: 55px;
+		border-style: solid;
+		border-width: 2px;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+	
 	.container_left{
 		float: left;
 	}
@@ -244,7 +258,7 @@
 		margin-top: .02%;
 		min-height: 375px;
 		min-width: 250px;
-		overflow: hidden;
+		clear: both;
 	}
 	
 	#zorgcarousel{
